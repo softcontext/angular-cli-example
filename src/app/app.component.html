@@ -1,0 +1,41 @@
+<div class="bs-example">
+    <ul class="nav nav-pills">
+        <li routerLinkActive="active"><a routerLink="home">Home</a></li>
+        <li routerLinkActive="active"><a routerLink="profile">Profile</a></li>
+        <li class="dropdown" routerLinkActive="active">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle">Bindings <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li><a routerLink="interpolation">Interpolation</a></li>
+                <li><a routerLink="oneway">Oneway</a></li>
+                <li><a routerLink="oneway-statement">Oneway Statement</a></li>
+                <li class="divider"></li>
+                <li><a routerLink="twoway">Twoway</a></li>
+            </ul>
+        </li>
+        <li class="dropdown" routerLinkActive="active">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle">Attribute <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li><a routerLink="ngclass">ngClass</a></li>
+                <li><a routerLink="ngstyle">ngStyle</a></li>
+            </ul>
+        </li>
+        <li class="dropdown" routerLinkActive="active">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle">Structure <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li><a routerLink="ngif">ngIf</a></li>
+                <li><a routerLink="ngswitch">ngSwitch</a></li>
+                <li><a routerLink="ngfor">ngFor</a></li>
+            </ul>
+        </li>
+        <li class="dropdown" routerLinkActive="active">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle">Reference <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li><a routerLink="ref">ref</a></li>
+            </ul>
+        </li>
+    </ul>
+	<hr/>
+    <div class="margin">
+      <router-outlet></router-outlet>
+    </div>
+</div>
